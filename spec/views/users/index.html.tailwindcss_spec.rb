@@ -14,7 +14,7 @@ RSpec.describe "users/index", type: :view do
 
   it "renders a list of users" do
     render
-    cell_selector = 'div>p'
+    cell_selector = 'div>strong'
     assert_select cell_selector, text: Regexp.new("Name".to_s), count: 2
   end
 end
